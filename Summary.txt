@@ -1,0 +1,37 @@
+
+小结
+要随时掌握工作区的状态，使用git status命令。
+如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+
+删除文件：
+Git rm file; git commit -m "message"
+
+撤销修改：
+git restore <file>: discard changes in working directory
+git restore --staged <file>: to unstage
+(替代方法：
+git checkout -- file
+git reset HEAD <file>）
+
+版本回退：
+git reset --hard HEAD^
+git reset –hard HEAD~100
+git reflog
+git reset --hard 1094a
+
+
+远程仓库：
+git remote add origin git@github.com:michaelliao/learngit.git
+git push origin master
+git push -u origin master
+-u: 把本地的master分支和远程的master分支关联起来
+git remote rm <name>
+git clone git@github.com:michaelliao/gitskills.git
+
+分支管理：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>或者git switch <name>
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
