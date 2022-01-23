@@ -7,6 +7,6 @@ Creating a new branch is quick and simple.
 DEV branch.
 It's me.
 I am your coworker.
-I am your coworker2.
+I am your worker2.
 
 
